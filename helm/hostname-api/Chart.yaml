@@ -1,0 +1,8 @@
+apiVersion: v1
+appVersion: "1"
+description:  Flask API application helm chart
+maintainers:
+- email: luthiano@outlook.com
+  name: Luthiano
+name: flask
+version: "1"

@@ -1,0 +1,9 @@
+replicaCount: 2
+
+image:
+  repository: 'luthiano/python-flask'
+  tag: 1
+  pullPolicy: IfNotPresent
+
+application:  "hostname-api"
+
