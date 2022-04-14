@@ -4,5 +4,5 @@ description:  Flask API application helm chart
 maintainers:
 - email: luthiano@outlook.com
   name: Luthiano
-name: flask
+name: hostname-api
 version: "1"
