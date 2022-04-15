@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: {{ include "flask.name" . }}
+  name: {{ include "hostname-api.name" . }}
 spec:
   selector:
     app: {{ .Values.application }}

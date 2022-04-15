@@ -11,6 +11,6 @@ resource "helm_release" "microservices-deploy" {
   name = each.key
 
   repository = each.value
-  chart      = each.value
+  chart      = each.key
   namespace  = "default"
 }
