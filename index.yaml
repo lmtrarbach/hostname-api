@@ -3,9 +3,9 @@ entries:
   hostname-api:
   - apiVersion: v1
     appVersion: 1.0.1
-    created: "2022-04-15T19:38:43.5777095+01:00"
+    created: "2022-04-15T19:53:49.2248335+01:00"
     description: Flask API application helm chart
-    digest: 9731d6e0931eb6026bebc6a558c510b807bea7e87b3f23789fc1c7f9d85fb235
+    digest: 17d478d6e157eff28eeafe3149ff4c7d46f7313e976954576c6cc1fa9258e234
     maintainers:
     - email: luthiano@outlook.com
       name: Luthiano
@@ -13,4 +13,4 @@ entries:
     urls:
     - https://lmtrarbach.github.io/hostname-api/hostname-api-1.0.1.tgz
     version: 1.0.1
-generated: "2022-04-15T19:38:43.5777095+01:00"
+generated: "2022-04-15T19:53:49.2165933+01:00"
