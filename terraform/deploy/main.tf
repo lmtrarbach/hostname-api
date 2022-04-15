@@ -6,7 +6,7 @@ provider "helm" {
 
 resource "helm_release" "microservices-deploy" {
   for_each = { 
-      "hostname-api" = "https://github.com/lmtrarbach/hostname-api"
+      "hostname-api" = "https://lmtrarbach.github.io/hostname-api/"
   }
   name = each.key
 
