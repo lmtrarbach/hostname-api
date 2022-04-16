@@ -5,9 +5,9 @@ metadata:
   labels: {{ .Values.application }}
 spec:
   replicas: {{ .Values.replicaCount }} 
-    spec:
-      containers:
-        - name: {{ .Chart.Name }} 
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-          ports:
-            - containerPort: 8080
+  spec:
+    containers:
+    - name: {{ .Chart.Name }} 
+      image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+      ports:
+      - containerPort: 8080
