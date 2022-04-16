@@ -2,12 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ .Values.application }}
-  labels: {{ .Values.application }}
+  labels:
+    app: {{ .Values.application }}
 spec:
-  replicas: {{ .Values.replicaCount }} 
-  spec:
-    containers:
-    - name: {{ .Chart.Name }} 
-      image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-      ports:
-      - containerPort: 8080
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Values.application }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.application }}
+    spec:
+      containers:
+      - name: {{ .Values.application }}
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        ports:
+        - containerPort: 8080
