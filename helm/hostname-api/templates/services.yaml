@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: {{ include "hostname-api.name" . }}
+  name: {{ .nameOverride }}
 spec:
   selector:
     app: {{ .Values.application }}
