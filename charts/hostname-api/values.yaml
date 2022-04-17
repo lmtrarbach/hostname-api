@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: 'luthiano/python-flask'
-  tag: 1e0085d9c54c6f22b5c39c7b54f4d0cde2b397af
+  tag: f2775f269a55a0de7bbf8d7d9e4965cc2058d75a
   pullPolicy: IfNotPresent
 
 application:  "hostname-api"
