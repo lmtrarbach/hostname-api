@@ -2,6 +2,18 @@ apiVersion: v1
 entries:
   hostname-api:
   - apiVersion: v1
+    appVersion: 1.0.8
+    created: "2022-04-17T10:45:29.537718604Z"
+    description: Flask API application helm chart
+    digest: e0b7f2f8c31117c5127e60a3e3f18b1daec213f9ac45dacd8f15bde3bc6d8ad6
+    maintainers:
+    - email: luthiano@outlook.com
+      name: Luthiano
+    name: hostname-api
+    urls:
+    - https://github.com/lmtrarbach/hostname-api/releases/download/hostname-api-1.0.78/hostname-api-1.0.78.tgz
+    version: 1.0.78
+  - apiVersion: v1
     appVersion: 1.0.7
     created: "2022-04-17T10:25:14.742055475Z"
     description: Flask API application helm chart
