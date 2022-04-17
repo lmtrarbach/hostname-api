@@ -7,7 +7,7 @@ import platform
 
 
 app = Flask(__name__)
-metrics = PrometheusMetrics(app)
+metrics = PrometheusMetrics(app=app, path='/metrics')
 
 @app.route('/')
 def Main():
@@ -22,4 +22,4 @@ def Main():
     return 'My flask api running on {}'.format(platform.uname()[1])
 
 if __name__ == "__main__":
-    app.run(debug = True, host = "0.0.0.0", port = 8080)
+    app.run(debug = False, host = "0.0.0.0", port = 8080)
