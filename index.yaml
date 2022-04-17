@@ -14,6 +14,18 @@ entries:
     - https://github.com/lmtrarbach/hostname-api/releases/download/hostname-api-1.0.78/hostname-api-1.0.78.tgz
     version: 1.0.78
   - apiVersion: v1
+    appVersion: 1.0.9
+    created: "2022-04-17T11:10:39.250335268Z"
+    description: Flask API application helm chart
+    digest: 5e3a800b2a04b74afae4372d327bf94e23164a8bd91fb2822bcb659db23ee676
+    maintainers:
+    - email: luthiano@outlook.com
+      name: Luthiano
+    name: hostname-api
+    urls:
+    - https://github.com/lmtrarbach/hostname-api/releases/download/hostname-api-1.0.9/hostname-api-1.0.9.tgz
+    version: 1.0.9
+  - apiVersion: v1
     appVersion: 1.0.7
     created: "2022-04-17T10:25:14.742055475Z"
     description: Flask API application helm chart
