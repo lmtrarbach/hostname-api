@@ -7,10 +7,7 @@ spec:
     app: {{ .Values.application }}
   ports:
   - protocol: "TCP"
-    # Port accessible inside cluster
     port: 8080
-    # Port to forward to inside the pod
     targetPort: 8080
-    # Port accessible outside cluster
     nodePort: 30002
   type: LoadBalancer
