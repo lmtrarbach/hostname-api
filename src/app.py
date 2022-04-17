@@ -2,10 +2,12 @@ from flask import Flask
 from flask import request
 from flask import make_response
 from flask import redirect
+from prometheus_flask_exporter import PrometheusMetrics
 import platform
 
 
 app = Flask(__name__)
+metrics = PrometheusMetrics(app)
 
 @app.route('/')
 def Main():
