@@ -1,0 +1,6 @@
+resource "null_resource" "minikube-tunnel" {
+  provisioner "local-exec" {
+    command = "tunnel"
+    interpreter = ["PowerShell", "minikube"]
+  }
+}

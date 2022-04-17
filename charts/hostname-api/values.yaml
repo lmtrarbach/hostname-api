@@ -7,3 +7,8 @@ image:
 
 application:  "hostname-api"
 
+autoscaling:
+  minpods: 2
+  maxpods: 10
+  enabled: true
+
