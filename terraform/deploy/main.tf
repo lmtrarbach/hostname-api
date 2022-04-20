@@ -17,6 +17,25 @@ resource "helm_release" "microservices-deploy" {
   namespace  = "default"
 }
 
+resource "helm_release" "database-deploy" {
+  name = "mariadb"
+
+  repository = "https://charts.bitnami.com/bitnami"
+  chart      = "mariadb"
+  namespace  = "default"
+
+  set {
+    name  = "auth.password"
+    value =  var.database_password
+    
+  }
+  set {
+    name  = "auth.username"
+    value =  var.database_user
+    
+  }
+}
+
 data "kubernetes_service" "services-output" {
   for_each = var.application_name
   metadata {

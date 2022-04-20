@@ -23,6 +23,19 @@ spec:
       containers:
       - name: {{ .Values.application }}
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        env:
+        - name: DATABASE_HOST
+          value:  {{ .Values.database.host }}
+        - name: DATABASE_USER_NAME
+        valueFrom:
+          secretKeyRef:
+            name: {{ .Values.application }}
+            key: USER_NAME
+        - name: DATABASE_PASSWORD
+        valueFrom:
+          secretKeyRef:
+            name: {{ .Values.application }}
+            key: PASSWORD
         ports:
         - containerPort: 8080
         resources:

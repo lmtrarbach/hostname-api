@@ -18,4 +18,9 @@ securityContext:
   fsGroup: 1001
   runAsUser: 1001
 
+database:
+  username: "aG9zdG5hbWVhcGk="
+  password: "YzdMT2VEQjIwSVV1ZmZhTA=="
+  host: mariadb
+
 
