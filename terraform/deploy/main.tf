@@ -34,6 +34,11 @@ resource "helm_release" "database-deploy" {
     value =  var.database_user
     
   }
+  set {
+    name = "metrics.enabled"
+    value = "True"
+
+  }
 }
 
 data "kubernetes_service" "services-output" {
