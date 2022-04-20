@@ -36,7 +36,7 @@ variable "application_name" {
   type = map
   default = {
      "hostname-api" = "https://lmtrarbach.github.io/hostname-api/",
-     "mariadb"      = "https://charts.bitnami.com/bitnami"
+     "another-api"      = "https://lmtrarbach.github.io/another-api/"
   }
 } 
 ```
@@ -54,3 +54,9 @@ The application is a simple flask answering the requests on the root on the port
 So to reach the endpoint we should request to http://127.0.0.1:8080
 There's also a prometheus /metrics endpoints on the application.
 If I have sometime will add Grafana as well.
+
+## Extras
+
+- [x] MariaDb
+- [x] Prometheus
+- [ ] Grafana
