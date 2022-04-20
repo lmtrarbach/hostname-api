@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: 'luthiano/python-flask'
-  tag: f2775f269a55a0de7bbf8d7d9e4965cc2058d75a
+  tag: 52fd069f25182b927cd637212c2485a5686930ee
   pullPolicy: IfNotPresent
 
 application:  "hostname-api"
@@ -11,4 +11,11 @@ autoscaling:
   minpods: 2
   maxpods: 10
   enabled: true
+
+
+securityContext:
+  enabled: true
+  fsGroup: 1001
+  runAsUser: 1001
+
 

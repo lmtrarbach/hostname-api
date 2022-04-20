@@ -5,6 +5,12 @@ metadata:
   labels:
     app: {{ .Values.application }}
 spec:
+  {{- if .Values.securityContext.enabled }}
+  securityContext:
+    enabled: {{ .Values.securityContext.enabled }}
+    runAsUser: {{ .Values.securityContext.runAsUser }}
+    fsGroup: {{ .Values.securityContext.fsGroup }}
+  {{- end }}
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
